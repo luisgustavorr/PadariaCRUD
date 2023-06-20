@@ -26,8 +26,7 @@
             <img src="<?php echo INCLUDE_PATH?>img/logo-ofc.png" alt="">
         </div>
             <div class="header_titles">
-                <span>Sobre</span>
-                <span>Delivery</span>
+                <span id="add_produto">Adicionar Produto</span>
                 <span>Localização</span>
                 <span>+55 (37)99999-9999</span>
             </div>

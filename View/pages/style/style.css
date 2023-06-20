@@ -6,6 +6,81 @@
 body {
   background-color: #cccccc;
 }
+fundo{
+  background:#00000067 ;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+#img_icon_father{
+  cursor: pointer;
+}
+.modal_adicionar_produto{
+  width: 55%;
+height: auto;
+background: #2b2b2b;
+border-radius: 15px;
+padding: 15px;
+display: none;
+flex-direction: column;
+align-items: center;
+}
+.modal_adicionar_produto .input_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.modal_adicionar_produto .input_box #input_img {
+  display: none;
+}
+.modal_adicionar_produto .input_box input {
+  border: none;
+height: 30px;
+border-radius: 5px;
+background: #d7d7d7;
+}
+.modal_adicionar_produto .input_box label{
+  margin-left: 5px;
+  color: white;
+  font-weight: 200;
+}
+.modal_adicionar_produto .icon_container i{
+  color: white;
+cursor: pointer;
+}
+
+
+.modal_adicionar_produto .icon_container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+.modal_adicionar_produto  button {
+  background: #C85E0F;
+border: none;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+margin-top: 15px;
+cursor: pointer;
+}
+
+.modal_adicionar_produto .flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal_adicionar_produto h3 {
+  color: white;
+font-weight: 300;
+text-align: center;
+font-family: "Cormorant Garamond", serif;
+font-size: 25px;
+}
 .flex {
   display: flex;
 }
@@ -40,6 +115,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 45%;
+  cursor: pointer;
 }
 .img_logo_father img {
   width: 150px;
@@ -63,11 +139,14 @@ header {
 .especialidades_box {
     width: 80%;
     margin: 0 auto;
-  height: 70%;
+  height: auto;
   border: 1px solid #dea460;
   border-radius: 65px 65px 10px 10px;
   margin-top: 10px;
   padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .especialidades_box .product {
   width: 270px;
@@ -89,6 +168,12 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.product .img_product_father img {
+  width: 140px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 .product .price {
   color: rgb(190, 184, 184);
@@ -153,7 +238,7 @@ background: #A14F12;
 }
  .carrinho {
   display: none;
-  height: 300px;
+  height: 0px;
 width: 200px;
 background: transparent;
 border: 1px solid white;
