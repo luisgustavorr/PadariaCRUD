@@ -26,9 +26,16 @@
             <img src="<?php echo INCLUDE_PATH?>img/logo-ofc.png" alt="">
         </div>
             <div class="header_titles">
-                <span id="add_produto">Adicionar Produto</span>
-                <span id="deletar_produto">Deletar Produto</span>
-                <span>+55 (37)99999-9999</span>
+                <span class="desktop add_produto " id="">Adicionar Produto</span>
+                <span class="desktop deletar_produto" id="deletar_produto">Deletar Produto</span>
             </div>
-         
+            <nav id="mobile">
+                <i class="fa-solid fa-bars"></i>
+               
+            </nav>
+        
         </header>
+        <div id="sidebar">
+        <span class="mobile add_produto" id="add_produto">Adicionar Produto</span>
+                <span class="mobile deletar_produto" id="deletar_produto">Deletar Produto</span>
+                    </div>

@@ -13,4 +13,3 @@ if (file_exists("uploads/".$cards['img'])) {
 }
 $deletar_cards = \MySql::conectar()->prepare("DELETE FROM tb_produtos WHERE `tb_produtos`.`id` = ?");
 $deletar_cards->execute(array($_POST['id']));
-?>

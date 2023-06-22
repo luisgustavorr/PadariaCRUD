@@ -29,4 +29,3 @@ if (isset($_POST['action'])) {
     $update = \MySql::conectar()->prepare("UPDATE `tb_produtos` SET `nome` = ?, `preco` = ?, `peso` = ?, `img` = ? WHERE `tb_produtos`.`id` = ?");
     $update->execute(array($_POST['input_nome'], $_POST['input_preco'], $_POST['input_peso'], $img, $_POST['input_id']));
 }
-?>

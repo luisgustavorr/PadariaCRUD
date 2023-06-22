@@ -86,6 +86,7 @@
   <h3>Nossas Especialidades</h3>
   <div class="especialidades_box">
     <?php \Models\HomeModel::imprimirCards() ?>
+
   </div>
 </div>
 </div>
