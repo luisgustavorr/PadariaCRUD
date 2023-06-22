@@ -15,6 +15,7 @@ fundo{
   top: 0;
   justify-content: center;
   align-items: center;
+  z-index:2;
 }
 #edit_img_icon_father,#img_icon_father{
   cursor: pointer;
