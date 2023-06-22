@@ -249,6 +249,7 @@ header {
   justify-content: center;
 }
 .product .img_product_father img {
+  filter: drop-shadow(4px 6px 2px #1d1c1c);
   width: 140px;
   height: 90px;
   object-fit: contain;
