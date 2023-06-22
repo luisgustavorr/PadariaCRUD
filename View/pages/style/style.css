@@ -15,10 +15,42 @@ fundo{
   justify-content: center;
   align-items: center;
 }
-#img_icon_father{
+#edit_img_icon_father,#img_icon_father{
   cursor: pointer;
 }
-.modal_adicionar_produto{
+
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    font-size: 16px;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    font-size: 15px;
+
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    font-size: 15px;
+
+  }
+}
+.modal_editar_produto ,.modal_adicionar_produto{
   width: 55%;
 height: auto;
 background: #2b2b2b;
@@ -28,39 +60,45 @@ display: none;
 flex-direction: column;
 align-items: center;
 }
-.modal_adicionar_produto .input_box {
+.modal_editar_produto .input_box,.modal_adicionar_produto .input_box {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 10px;
 }
-.modal_adicionar_produto .input_box #input_img {
+.modal_editar_produto .input_box #edit_input_img ,.modal_adicionar_produto .input_box #input_img {
   display: none;
 }
-.modal_adicionar_produto .input_box input {
-  border: none;
+.modal_editar_produto .input_box input,.modal_adicionar_produto .input_box input {
+  border: none; 
 height: 30px;
 border-radius: 5px;
 background: #d7d7d7;
 }
-.modal_adicionar_produto .input_box label{
+.modal_editar_produto .input_box label,.modal_adicionar_produto .input_box label{
   margin-left: 5px;
   color: white;
   font-weight: 200;
 }
-.modal_adicionar_produto .icon_container i{
+.modal_editar_produto .icon_container i,.modal_adicionar_produto .icon_container i{
   color: white;
 cursor: pointer;
 }
 
 
-.modal_adicionar_produto .icon_container {
+.modal_editar_produto .icon_container ,.modal_adicionar_produto .icon_container {
   width: 100%;
   display: flex;
   justify-content: end;
   padding: 10px;
 }
-.modal_adicionar_produto  button {
+.modal_editar_produto .box_img_father,.modal_adicionar_produto .box_img_father{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+.modal_editar_produto button,.modal_adicionar_produto  button {
   background: #C85E0F;
 border: none;
 color: white;
@@ -69,17 +107,37 @@ border-radius: 5px;
 margin-top: 15px;
 cursor: pointer;
 }
-
-.modal_adicionar_produto .flex {
+.modal_editar_produto .input_box .input_elaborado input ,.modal_adicionar_produto .input_box .input_elaborado input {
+  width: 75%;
+}
+.modal_editar_produto .flex ,.modal_adicionar_produto .flex {
   flex-wrap: wrap;
   justify-content: center;
 }
-.modal_adicionar_produto h3 {
+.modal_editar_produto .flex form,.modal_adicionar_produto .flex form {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.modal_editar_produto h3,.modal_adicionar_produto h3 {
   color: white;
 font-weight: 300;
 text-align: center;
 font-family: "Cormorant Garamond", serif;
 font-size: 25px;
+}
+.input_elaborado {
+  background: #d7d7d7;
+border-radius: 5px;
+width: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.input_elaborado span{
+  font-size: 20px;
+color: #4f4f4f;
+
 }
 .flex {
   display: flex;
@@ -122,12 +180,14 @@ header {
   margin-left: 60px;
 }
 .bottom_part {
-  height: 75vh;
+  height: 90vh;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   width: 100vw;
   flex-direction: column;
+  margin-top: 5%;
 }
+
 .bottom_part h3 {
   width: 100%;
   text-align: center;
@@ -156,13 +216,19 @@ header {
   margin: 20px 50px;
 }
 
-.especialidades_box .product .fa-circle-info {
+.edit, .confirm_delete {
   width: 100%;
   text-align: end;
   padding-right: 10px;
   padding-top: 10px;
   color: #7a7a7a;
   cursor: pointer;
+
+}
+.confirm_delete {
+  color: #ff8f00;
+  cursor: pointer;
+
 }
 .product .img_product_father {
   width: 100%;

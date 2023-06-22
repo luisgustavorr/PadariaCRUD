@@ -14,7 +14,7 @@ class HomeModel
             $produto = str_replace(' ', '_', $value['nome']);
             echo '
             <div class="product" id="'.$produto.'_'.$value['id'].'_card">
-            <i class="fa-solid fa-circle-info"></i>
+            <i  produto="'.$value['id'].'"class="edit fa-solid fa-pen-to-square"></i>
             <div class="img_product_father">
                 <img src="'.INCLUDE_PATH.'Models/post_receivers/uploads/'.$value['img'].'" width=" 150px">
             </div>
