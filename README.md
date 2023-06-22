@@ -1,5 +1,7 @@
-#__Projeto CRUD de Sistema de Produtos para Padaria__
-Olá! Este é um projeto que desenvolvi e gostaria de compartilhar com você. Trata-se de um sistema CRUD (Create, Read, Update, Delete) para gerenciar os produtos de uma padaria.
+# __Projeto CRUD de Sistema de Produtos para Padaria__
+![image](https://github.com/luisgustavorr/PadariaCRUD/assets/136248186/66fe7d60-c23b-4d04-aad6-4e74bff8e3ba)
+
+Olá! Este é um projeto que desenvolvi e que gostaria de compartilhar com você. Trata-se de um sistema CRUD (Create, Read, Update, Delete) para gerenciar os produtos de uma padaria.
 
 O objetivo desse sistema é oferecer uma maneira fácil e intuitiva de adicionar, remover e editar os produtos da padaria. Através dele, é possível cadastrar novos produtos, visualizar a lista de produtos existentes, editar informações e até mesmo remover produtos quando necessário.
 
