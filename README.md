@@ -17,6 +17,20 @@ O projeto foi desenvolvido seguindo o padrão arquitetural MVC (Model-View-Contr
 # __Licença__
 Este projeto está licenciado sob a licença MIT. Você pode consultar o arquivo LICENSE para mais detalhes.
 
+# __Instruções de Instalação__
+Siga as etapas abaixo para configurar e executar o projeto:
+
+1. Faça o download ou clone os arquivos do repositório para o seu ambiente local.
+
+2. Configure o servidor web para apontar para o diretório raiz do projeto.
+
+3. Crie um banco de dados no MySQL ou outro banco de dados compatível.
+
+4. Importe o arquivo de criação do banco de dados (na pasta DB) para criar a estrutura do banco de dados.
+
+5. Configure as credenciais do banco de dados no arquivo "config.php".
+
+6. Abra o projeto em um navegador da web e comece a utilizar o sistema de produtos para padaria.
 # __Contato__
 Se tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para luisgustavo20061@gmail.com.
 
