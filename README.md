@@ -7,12 +7,17 @@ O objetivo desse sistema é oferecer uma maneira fácil e intuitiva de adicionar
 
 Para construir esse projeto, utilizei diferentes tecnologias. No lado do cliente, utilizei JavaScript com a biblioteca JQuery para criar uma interface interativa. Já no lado do servidor, utilizei a linguagem PHP para processar as solicitações e interagir com o banco de dados MySql.
 
-A interface do sistema foi desenvolvida com HTML e CSS, garantindo uma aparência agradável e responsiva em diferentes dispositivos.
+A interface do sistema foi desenvolvida com HTML e CSS, dando uma aparência agradável e responsiva em diferentes dispositivos.
 
-Além disso, optei por seguir o padrão arquitetural MVC (Model-View-Controller) no desenvolvimento do projeto. Essa abordagem separa a lógica de negócio, a apresentação visual e o controle das ações, tornando o código mais organizado e facilitando futuras manutenções e expansões.
 
-O projeto está licenciado sob a licença MIT, o que significa que você pode utilizá-lo, modificar e distribuir de acordo com os termos da licença.
+# __Arquitetura MVC__
 
+O projeto foi desenvolvido seguindo o padrão arquitetural MVC (Model-View-Controller) com PHP. Essa abordagem separa a lógica de negócio (Model), a interface de usuário (View) e a camada de controle (Controller), facilitando a manutenção e organização do código.
+
+# __Licença__
+Este projeto está licenciado sob a licença MIT. Você pode consultar o arquivo LICENSE para mais detalhes.
+
+# __Contato__
 Se tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para luisgustavo20061@gmail.com.
 
 Agradeço por conferir o meu projeto! Espero que ele demonstre minhas habilidades em desenvolvimento web e que possa ser útil para você.
