@@ -3,6 +3,27 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #494949 #959595;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #959595;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #494949;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 body {
   background-color: #cccccc;
 }
@@ -15,6 +36,7 @@ fundo{
   top: 0;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 #edit_img_icon_father,#img_icon_father{
   cursor: pointer;
@@ -196,7 +218,7 @@ header {
   height: auto;
   display: flex;
   justify-content: start;
-  width: 100vw;
+  width: 99vw;
   flex-direction: column;
   margin-top: 5%;
 }
